@@ -1,14 +1,24 @@
 <template>
   <div>
-      <div v-if="loading">
-        <Loading/>
-      </div>
-      <div v-else>
+    <div v-if="loading">
+      <Loading/>
+    </div>
+    <div v-else class="landing-page-container">
+      <div class="landing-hero-swiper">
+        <div class="logo-holder">
+          <img src="@/assets/images/logo/Notus-logo-main.svg" />
+        </div>
+        <div class="landing-hero-container">
+          <div class="landing-hero-content">
+            <h1>Notus Front-end test</h1>
+          </div>
+        </div>
         <HeroSlider
           :swiperOption="heroSwiperOption"
           :heroSwiper="heroImages"
         />
       </div>
+    </div>
   </div>
 </template>
 
@@ -58,5 +68,40 @@ export default {
 </script>
 
 <style lang="scss">
+.landing-page-container {
+  position: relative;
 
+  .landing-hero-swiper {
+    height: 100vh;
+
+    .logo-holder {
+      position: absolute;
+      z-index: 9;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      top: 6.25rem;
+    }
+
+    .landing-hero-container {
+      position: absolute;
+      z-index: 9;
+      width: 100%;
+      height: 100%;
+
+      .landing-hero-content {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        h1 {
+          color: #fff;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
 </style>
