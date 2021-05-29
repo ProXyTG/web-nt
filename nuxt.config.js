@@ -14,12 +14,15 @@ export default {
       { hid: 'description', name: 'description', content: '' }
     ],
     link: [
+      { rel: 'preconnect', href: 'https://fonts.gstatic.com' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap' },
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
+    '~/assets/scss/global.scss',
     '~/assets/scss/normalize.scss',
   ],
 
