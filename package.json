@@ -13,6 +13,7 @@
     "core-js": "^3.9.1",
     "nuxt": "^2.15.3",
     "nuxt-buefy": "^0.4.4",
+    "nuxt-gmaps": "^1.2.10",
     "swiper": "^5.4.5",
     "vue-awesome-swiper": "^4.1.1"
   },

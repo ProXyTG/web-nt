@@ -53,6 +53,9 @@ export default {
     // https://go.nuxtjs.dev/buefy
     'nuxt-buefy',
     '@nuxtjs/style-resources',
+    ['nuxt-gmaps', {
+      key: 'AIzaSyBhT7So-JF9-thlJe-4pD_29psn73P9Ogs',
+    }]
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

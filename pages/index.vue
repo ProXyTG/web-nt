@@ -18,6 +18,9 @@
           :heroSwiper="heroImages"
         />
       </div>
+      <div class="google-maps-wrapper">
+        <GoogleMaps />
+      </div>
     </div>
   </div>
 </template>
@@ -25,11 +28,13 @@
 <script>
 import Loading from '@/components/Loading.vue'
 import HeroSlider from '@/components/HeroSlider.vue'
+import GoogleMaps from '@/components/GoogleMaps.vue'
 
 export default {
   components: {
     Loading,
-    HeroSlider
+    HeroSlider,
+    GoogleMaps
   },
 
   data() {
@@ -55,7 +60,7 @@ export default {
         {
           heroSwiperImage: require('~/assets/images/hero/hero-image-3.jpg')
         }
-      ]
+      ],
     }
   },
 
@@ -73,6 +78,7 @@ export default {
 
   .landing-hero-swiper {
     height: 100vh;
+    position: relative;
 
     .logo-holder {
       position: absolute;
@@ -100,6 +106,15 @@ export default {
           color: #fff;
           font-weight: 700;
         }
+      }
+    }
+  }
+
+  .google-maps-wrapper {
+    .GMap {
+      .GMap__Wrapper {
+        height: auto;
+        min-height: 37.5rem;
       }
     }
   }
