@@ -1,49 +1,44 @@
 <template>
-  <div>
-    <div v-if="loading">
-      <Loading/>
+  <div class="landing-page-container">
+    <div class="landing-hero-swiper">
+      <div class="logo-holder">
+        <img src="@/assets/images/logo/Notus-logo-main.svg" />
+      </div>
+      <div class="landing-hero-container">
+        <div class="landing-hero-content">
+          <h1>Notus Front-end test</h1>
+        </div>
+      </div>
+      <HeroSlider
+        :swiperOption="heroSwiperOption"
+        :heroSwiper="heroImages"
+      />
     </div>
-    <div v-else class="landing-page-container">
-      <div class="landing-hero-swiper">
-        <div class="logo-holder">
-          <img src="@/assets/images/logo/Notus-logo-main.svg" />
-        </div>
-        <div class="landing-hero-container">
-          <div class="landing-hero-content">
-            <h1>Notus Front-end test</h1>
-          </div>
-        </div>
-        <HeroSlider
-          :swiperOption="heroSwiperOption"
-          :heroSwiper="heroImages"
-        />
+    <div class="gallery-holder">
+      <Gallery />
+    </div>
+    <div class="slider-gallery-holder">
+      <div class="title-holder">
+        <h1>Task 4</h1>
       </div>
-      <div class="gallery-holder">
-        <Gallery />
+      <div class="slider-holder">
+        <SliderGallery />
       </div>
-      <div class="slider-gallery-holder">
-        <div class="title-holder">
-          <h1>Task 4</h1>
-        </div>
-        <div class="slider-holder">
-          <SliderGallery />
-        </div>
-      </div>
-      <div class="google-maps-wrapper">
-        <GoogleMaps />
-      </div>
-      <div class="task-5-container">
-        <div class="task-5-content">
-          <h1>Task 5</h1>
-          <div class="task-5-desc">
-            <p>Quas enim kakaw Graeci appellant, vitia malo quam malitias nominare. Idem adhuc; Idemque diviserunt naturam hominis in animum et corpus. Istam voluptatem, inquit, Epicurus ignorat? Duo enim genera quae erant, fecit tria.</p>
-            <p class="colored">Ut proverbia non nulla veriora sint quam vestra dogmata</p>
-            <p>An haec ab eo non dicuntur? Idcirco enim non desideraret, quia, quod dolore caret, id in voluptate est. Quoniam, si dis placet, ab Epicuro loqui discimus. Quid sequatur, quid repugnet, vident.</p>
-            <div class="btn-holder">
-              <button class="button-anim">
-                <span>Hover to have solid fill</span>
-              </button>
-            </div>
+    </div>
+    <div class="google-maps-wrapper">
+      <GoogleMaps />
+    </div>
+    <div class="task-5-container">
+      <div class="task-5-content">
+        <h1>Task 5</h1>
+        <div class="task-5-desc">
+          <p>Quas enim kakaw Graeci appellant, vitia malo quam malitias nominare. Idem adhuc; Idemque diviserunt naturam hominis in animum et corpus. Istam voluptatem, inquit, Epicurus ignorat? Duo enim genera quae erant, fecit tria.</p>
+          <p class="colored">Ut proverbia non nulla veriora sint quam vestra dogmata</p>
+          <p>An haec ab eo non dicuntur? Idcirco enim non desideraret, quia, quod dolore caret, id in voluptate est. Quoniam, si dis placet, ab Epicuro loqui discimus. Quid sequatur, quid repugnet, vident.</p>
+          <div class="btn-holder">
+            <button class="button-anim">
+              <span>Hover to have solid fill</span>
+            </button>
           </div>
         </div>
       </div>
@@ -69,7 +64,6 @@ export default {
 
   data() {
     return {
-      loading: true,
       heroSwiperOption: {
         pagination: {
           el: '.swiper-pagination',
@@ -92,12 +86,6 @@ export default {
         }
       ],
     }
-  },
-
-  mounted() {
-    this.$nextTick(() => {
-      setTimeout(() => this.loading = false, 5000)
-    })
   }
 }
 </script>
