@@ -18,6 +18,9 @@
           :heroSwiper="heroImages"
         />
       </div>
+      <div class="gallery-holder">
+        <Gallery />
+      </div>
       <div class="google-maps-wrapper">
         <GoogleMaps />
       </div>
@@ -44,12 +47,14 @@
 import Loading from '@/components/Loading.vue'
 import HeroSlider from '@/components/HeroSlider.vue'
 import GoogleMaps from '@/components/GoogleMaps.vue'
+import Gallery from '@/components/Gallery.vue'
 
 export default {
   components: {
     Loading,
     HeroSlider,
-    GoogleMaps
+    GoogleMaps,
+    Gallery
   },
 
   data() {
