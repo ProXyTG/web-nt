@@ -14,10 +14,10 @@
         :heroSwiper="heroImages"
       />
     </div>
-    <div class="gallery-holder">
+    <div id="task3" class="gallery-holder">
       <Gallery />
     </div>
-    <div class="slider-gallery-holder">
+    <div id="task4" class="slider-gallery-holder">
       <div class="title-holder">
         <h1>Task 4</h1>
       </div>
@@ -25,7 +25,7 @@
         <SliderGallery />
       </div>
     </div>
-    <div class="google-maps-wrapper">
+    <div id="task5" class="google-maps-wrapper">
       <GoogleMaps />
     </div>
     <div class="task-5-container">

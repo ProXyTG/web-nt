@@ -3,6 +3,7 @@
     <div class="loading-page" :class="{ 'is-loaded': !loading }">
       <Loading/>
     </div>
+    <Header />
     <Nuxt />
     <Footer />
   </div>
@@ -10,10 +11,12 @@
 
 <script>
 import Footer from '@/components/Footer.vue'
+import Header from '@/components/Header.vue'
 
 export default {
   components: {
-    Footer
+    Footer,
+    Header
   },
   data() {
     return {

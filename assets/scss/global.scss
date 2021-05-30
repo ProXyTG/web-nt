@@ -73,3 +73,12 @@ p {
     opacity: 0.8;
 	}
 }
+
+
+body {
+  &.bm-overlay {
+    .bm-menu {
+      width: 100% !important;
+    }
+  }
+}

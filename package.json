@@ -15,7 +15,8 @@
     "nuxt-buefy": "^0.4.4",
     "nuxt-gmaps": "^1.2.10",
     "swiper": "^5.4.5",
-    "vue-awesome-swiper": "^4.1.1"
+    "vue-awesome-swiper": "^4.1.1",
+    "vue-burger-menu": "^2.0.5"
   },
   "devDependencies": {
     "fibers": "^5.0.0",
