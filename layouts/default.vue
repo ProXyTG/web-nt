@@ -26,8 +26,16 @@ export default {
 
   mounted() {
     this.$nextTick(() => {
-      setTimeout(() => this.loading = false, 5000)
+      document.getElementsByTagName('html')[0].style.overflow = 'hidden'
+      setTimeout(() =>
+        this.loadingFunc(), 5000)
     })
+  },
+  methods: {
+    loadingFunc() {
+      this.loading = false,
+      document.getElementsByTagName('html')[0].style.overflow = 'auto'
+    }
   }
 }
 </script>
@@ -45,5 +53,9 @@ export default {
 
 .loading-page.is-loaded {
   opacity: 0;
+}
+
+.scroll-restrictions {
+  overflow: hidden;
 }
 </style>
