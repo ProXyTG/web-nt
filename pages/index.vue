@@ -65,6 +65,7 @@ export default {
   data() {
     return {
       heroSwiperOption: {
+        effect: 'fade',
         pagination: {
           el: '.swiper-pagination',
           type: 'fraction'
@@ -93,6 +94,9 @@ export default {
 <style lang="scss">
 .landing-page-container {
   position: relative;
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
 
   .landing-hero-swiper {
     height: 100vh;
