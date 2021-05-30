@@ -1,5 +1,5 @@
 <template>
-  <div class="gallery-holder">
+  <div class="gallery-content">
     <div class="gallery-text">
       <h1>
         Task 3
@@ -34,7 +34,7 @@ export default {
 </script>
 
 <style lang="scss">
-.gallery-holder {
+.gallery-content {
   background-color: #fff;
   padding: 9.375rem 3%;
 

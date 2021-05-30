@@ -158,7 +158,7 @@ export default {
 
   .task-5-container {
     background-color: #fff;
-    padding: 12.5rem 0;
+    padding: 12.5rem 0 9.688rem 0;
 
     .task-5-content {
       max-width: 60rem;
@@ -184,7 +184,7 @@ export default {
       }
 
       .btn-holder {
-        margin: 6.25rem 0 9.688rem 0;
+        margin-top: 6.25rem;
 
         button:hover, button:focus {
           box-shadow: none;

@@ -47,5 +47,9 @@ export default {
   width: 100%;
   margin: 0 auto;
   position: unset;
+
+  img {
+    min-height: 550px;
+  }
 }
 </style>
