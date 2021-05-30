@@ -28,6 +28,34 @@ p {
   font-size: 1.125rem;
 }
 
+//swiper navigation
+.swiper-button-next,
+.swiper-button-prev {
+	border-radius: 50%;
+  color: transparent;
+  height: 1.875rem;
+  outline: none;
+  width: 1.875rem;
+  border: 2px solid #fff;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  border-radius: 50%;
+  color: #fff;
+  font-size: 0.938rem;
+  font-weight: 900;
+  position: relative;
+}
+
+.swiper-button-prev::after {
+  right: 1px;
+}
+
+.swiper-button-next::after {
+  left: 1px;
+}
+
 // animations
 @keyframes loading-pulse-effect {
 	0% {

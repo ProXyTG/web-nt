@@ -21,6 +21,14 @@
       <div class="gallery-holder">
         <Gallery />
       </div>
+      <div class="slider-gallery-holder">
+        <div class="title-holder">
+          <h1>Task 4</h1>
+        </div>
+        <div class="slider-holder">
+          <SliderGallery />
+        </div>
+      </div>
       <div class="google-maps-wrapper">
         <GoogleMaps />
       </div>
@@ -48,13 +56,15 @@ import Loading from '@/components/Loading.vue'
 import HeroSlider from '@/components/HeroSlider.vue'
 import GoogleMaps from '@/components/GoogleMaps.vue'
 import Gallery from '@/components/Gallery.vue'
+import SliderGallery from '@/components/SliderGallery.vue'
 
 export default {
   components: {
     Loading,
     HeroSlider,
     GoogleMaps,
-    Gallery
+    Gallery,
+    SliderGallery
   },
 
   data() {
@@ -127,6 +137,25 @@ export default {
           font-weight: 700;
         }
       }
+    }
+  }
+
+  .slider-gallery-holder {
+    padding: 6.25rem 2rem;
+
+    .title-holder {
+      h1 {
+        color: #fff;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 6.25rem;
+      }
+    }
+
+    .slider-holder {
+      position: relative;
+      max-width: 1230px;
+      margin: 0 auto;
     }
   }
 

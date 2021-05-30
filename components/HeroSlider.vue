@@ -1,7 +1,7 @@
 <template>
   <div>
-    <div class="swiper-overlay" />
-    <swiper class="swiper" :options="swiperOption">
+    <div class="hero-swiper-overlay" />
+    <swiper class="swiper hero-swiper" :options="swiperOption">
       <swiper-slide v-for="(img, index) in heroSwiper" :key="index">
         <img :src="img.heroSwiperImage" />
       </swiper-slide>
@@ -35,7 +35,7 @@ export default {
 </script>
 
 <style lang="scss">
-.swiper-overlay {
+.hero-swiper-overlay {
   position: absolute;
   z-index: 3;
   width: 100%;
@@ -44,7 +44,7 @@ export default {
   background-color: rgba(8, 27, 47, 0.7);
 }
 
-.swiper {
+.swiper.hero-swiper {
   height: 100vh;
   position: unset;
 
@@ -70,14 +70,8 @@ export default {
 
   .swiper-button-next,
   .swiper-button-prev {
-    border-radius: 50%;
-    color: transparent;
-    height: 1.875rem;
-    outline: none;
     top: unset;
     bottom: 6.25rem;
-    width: 1.875rem;
-    border: 2px solid #fff;
   }
 
   .swiper-button-prev {
@@ -86,23 +80,6 @@ export default {
 
   .swiper-button-next {
     right: 45vw;
-  }
-
-  .swiper-button-next::after,
-  .swiper-button-prev::after {
-    border-radius: 50%;
-    color: #fff;
-    font-size: 0.938rem;
-    font-weight: 900;
-    position: relative;
-  }
-
-  .swiper-button-prev::after {
-    right: 1px;
-  }
-
-  .swiper-button-next::after {
-    left: 1px;
   }
 }
 </style>
