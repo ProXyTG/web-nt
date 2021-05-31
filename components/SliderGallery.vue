@@ -28,12 +28,26 @@ export default {
   data() {
     return {
       swiperOption: {
-        slidesPerView: 3,
-        spaceBetween: 50,
-        loop: true,
         navigation: {
           nextEl: '.swiper-button-next',
           prevEl: '.swiper-button-prev'
+        },
+
+        breakpoints: {
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 50,
+          },
+
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+          },
+
+          300: {
+            slidesPerView: 2,
+            spaceBetween: 15
+          }
         }
       }
     }
@@ -48,8 +62,36 @@ export default {
   margin: 0 auto;
   position: unset;
 
+  @media screen and (min-width: 1023px) and (max-width: 1279px) {
+    max-width: 850px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1022px) {
+    max-width: 620px;
+  }
+
+  @media screen and (max-width: 767px) {
+    max-width: 300px;
+  }
+
   img {
     min-height: 550px;
+
+    @media screen and (max-width: 767px) {
+      min-height: unset;
+    }
+  }
+
+  .swiper-button-prev {
+    @media screen and (max-width: 1279px) {
+      left: 0px;
+    }
+  }
+
+  .swiper-button-next {
+    @media screen and (max-width: 1279px) {
+      right: 0px;
+    }
   }
 }
 </style>

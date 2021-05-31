@@ -66,6 +66,11 @@ export default {
     font-size: 1rem;
     color: #fff;
     opacity: 0.6;
+
+    @media screen and (max-width: 767px) {
+      height: 2.8rem;
+      font-size: 1.5rem;
+    }
   }
 
   .swiper-button-next,
@@ -76,10 +81,26 @@ export default {
 
   .swiper-button-prev {
     left: 45vw;
+
+    @media screen and (max-width: 1023px) {
+      left: 40vw;
+    }
+
+    @media screen and (max-width: 767px) {
+      left: 30vw;
+    }
   }
 
   .swiper-button-next {
     right: 45vw;
+
+    @media screen and (max-width: 1023px) {
+      right: 40vw;
+    }
+
+    @media screen and (max-width: 767px) {
+      right: 30vw;
+    }
   }
 }
 </style>

@@ -7,6 +7,10 @@ $secondary-text: #42BEB2;
 html {
   font-size: 16px;
   background-color: $primary;
+
+  @media screen and (max-width: 767px) {
+    font-size: 2.1vw;
+  }
 }
 
 h1,
@@ -22,11 +26,22 @@ p {
 
 h1 {
   font-size: 3.75rem;
+  line-height: 4.563rem;
+
+  @media screen and (max-width: 767px) {
+    font-size: 4rem;
+    line-height: 5rem;
+  }
 }
 
 p {
   font-size: 1.125rem;
-  line-height: 30px;
+  line-height: 1.875rem;
+
+  @media screen and (max-width: 767px) {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
 }
 
 //swiper navigation
@@ -38,6 +53,11 @@ p {
   outline: none;
   width: 1.875rem;
   border: 2px solid #fff;
+
+  @media screen and (max-width: 767px) {
+    width: 2.8rem;
+    height: 2.8rem;
+  }
 }
 
 .swiper-button-next::after,

@@ -21,18 +21,28 @@ footer {
   position: relative;
 
   .main-footer {
-    min-height: 200px;
+    min-height: 12.5rem;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @media screen and (max-width: 767px) {
+      min-height: 9.375rem;
+    }
+
+    img {
+      @media screen and (max-width: 767px) {
+        width: 13rem;
+      }
+    }
   }
 
   .floating-footer {
     background-color: $secondary-text;
     max-width: 1200px;
     width: 100%;
-    min-height: 100px;
+    min-height: 6.25rem;
     position: absolute;
     top: 0;
     left: 50%;
@@ -40,6 +50,13 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @media screen and (max-width: 768px) {
+      position: relative;
+      transform: unset;
+      left: unset;
+      top: unset;
+    }
 
     p {
       color: #fff;

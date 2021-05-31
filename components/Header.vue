@@ -36,12 +36,22 @@ export default {
         align-items: center;
         justify-content: center;
         width: 100%;
+
+        img {
+          @media screen and (max-width: 767px) {
+            width: 8rem;
+          }
+        }
       }
 
       .menu-items-holder {
         margin-left: 13.02vw;
         flex-direction: column;
         margin-top: 16.6vh;
+
+        @media screen and (max-width: 767px) {
+          margin-top: 12vh;
+        }
 
         a {
           color: #fff;
@@ -61,6 +71,11 @@ export default {
       display: flex;
       align-items: center;
       justify-content: center;
+
+      @media screen and (max-width: 767px) {
+      top: 4rem;
+      left: 3rem;
+    }
 
       .bm-cross {
         background-color: $primary !important;
@@ -85,6 +100,13 @@ export default {
     left: 6.25rem;
     height: 1.1rem;
     width: 1.625rem;
+
+    @media screen and (max-width: 767px) {
+      width: 2.5rem;
+      height: 2.1rem;
+      top: 4rem;
+      left: 3rem;
+    }
   }
 
   .bm-burger-bars {
@@ -96,7 +118,11 @@ export default {
   }
 
   .line-style:nth-child(2) {
-    width: 22px;
+    width: 1.375rem;
+
+    @media screen and (max-width: 767px) {
+      width: 2rem;
+    }
   }
 }
 </style>

@@ -106,6 +106,12 @@ export default {
       justify-content: center;
       width: 100%;
       top: 6.25rem;
+
+      img {
+        @media screen and (max-width: 767px) {
+          width: 12rem;
+        }
+      }
     }
 
     .landing-hero-container {
@@ -130,7 +136,7 @@ export default {
   }
 
   .slider-gallery-holder {
-    padding: 6.25rem 2rem;
+    padding: 6.25rem 3%;
 
     .title-holder {
       h1 {
@@ -159,7 +165,7 @@ export default {
 
   .task-5-container {
     background-color: #fff;
-    padding: 12.5rem 0 9.688rem 0;
+    padding: 12.5rem 3% 9.688rem 3%;
 
     .task-5-content {
       max-width: 60rem;
@@ -182,6 +188,10 @@ export default {
         color: $secondary-text;
         font-weight: bold;
         margin-top: 2rem;
+
+        @media screen and (max-width: 767px) {
+          margin-top: 4rem;
+        }
       }
 
       .btn-holder {
@@ -197,9 +207,13 @@ export default {
           background: none;
           border: none;
           color: #000;
-          font-size: 18px;
+          font-size: 1.125rem;
           cursor: pointer;
           background: #fff;
+
+          @media screen and (max-width: 767px) {
+            font-size: 2rem;
+          }
         }
         span{
           display: block;

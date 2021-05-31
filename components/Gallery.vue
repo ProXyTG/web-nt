@@ -64,13 +64,17 @@ export default {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    gap: 30px 30px;
+    gap: 1.875rem 1.875rem;
     place-items: center;
     grid-template-areas:
       "first-column second-column-up second-column-up third-column"
       "first-column second-column-up second-column-up third-column"
       "first-column second-column-down second-column-down third-column"
       "first-column second-column-down second-column-down third-column";
+
+      @media screen and (max-width: 767px) {
+        gap: 1.175rem 1.175rem;
+      }
   }
 
   .first-column { grid-area: first-column; }
