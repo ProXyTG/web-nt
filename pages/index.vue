@@ -29,6 +29,7 @@
       <GoogleMaps />
     </div>
     <div class="task-5-container">
+      <div class="horizontal-line"/>
       <div class="task-5-content">
         <h1>Task 5</h1>
         <div class="task-5-desc">
@@ -166,6 +167,16 @@ export default {
   .task-5-container {
     background-color: #fff;
     padding: 12.5rem 3% 9.688rem 3%;
+    position: relative;
+
+    .horizontal-line {
+      width: 3px;
+      height: 12.5rem;
+      position: absolute;
+      background-color: #081B2F;
+      left: 50%;
+      top: -6.25rem;
+    }
 
     .task-5-content {
       max-width: 60rem;
